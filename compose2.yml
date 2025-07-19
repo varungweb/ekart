@@ -4,7 +4,7 @@ services:
     container_name: ekart
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: docker/Dockerfile
     ports:
       - "8080:8070"
     restart: unless-stopped
