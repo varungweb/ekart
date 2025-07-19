@@ -1,0 +1,10 @@
+services:
+  ekart-app:
+    image: ekart-app:latest
+    container_name: ekart
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8070"
+    restart: unless-stopped
