@@ -1,5 +1,24 @@
 # Spring Boot Shopping Cart Web App
 
+## Installation
+```bash
+bash install-docker.sh
+sudo apt install openjdk-17-jdk git -y
+sudo apt install maven
+```
+
+
+## Creation of jar file
+```bash
+git clone https://github.com/varungweb/ekart
+cd ekart
+chmod +x scripts/mvnw
+mvn clean package -DskipTests
+docker build -t ekart-app -f docker/Dockerfile .
+docker run -d -p 8080:8070 --name ekart ekart-app
+
+```
+
 ## About
 
 This is a demo project for practicing Spring + Thymeleaf. The idea was to build some basic shopping cart web app.
