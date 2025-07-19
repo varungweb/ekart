@@ -1,10 +1,10 @@
 services:
   ekart-app:
     image: ekart-app:latest
-    container_name: ekart
+    container_name: ekart-jdkhost
     build:
       context: .
-      dockerfile: docker/Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "8080:8070"
     restart: unless-stopped

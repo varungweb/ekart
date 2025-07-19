@@ -1,6 +1,21 @@
 # Spring Boot Shopping Cart Web App
 
-## Installation
+## Automated with Docker-Compose
+```bash
+bash install-docker.sh
+sudo apt update -y
+```
+
+```bash
+sudo su
+exit
+```
+
+```bash
+docker compose up -d --build && docker compose logs -f
+```
+
+## Installation 
 ```bash
 bash install-docker.sh
 sudo apt update -y
