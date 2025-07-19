@@ -3,6 +3,7 @@
 ## Installation
 ```bash
 bash install-docker.sh
+sudo apt update -y
 sudo apt install openjdk-17-jdk git -y
 sudo apt install maven
 ```
